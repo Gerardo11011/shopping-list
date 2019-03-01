@@ -14,8 +14,9 @@ $("#boton").on('click', function(event){
 //Check
 $('#Lista').on('click', '.check', function(event){
   event.preventDefault();
-  $(this).parent().css('text-decoration', 'line-through');
+  $(this).parent().toggleClass('li deschec')
 });
+
 
 //Delete
 $('#Lista').on('click', '.borrar', function(event){
